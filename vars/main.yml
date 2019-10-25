@@ -1,0 +1,5 @@
+---
+_redis_role: ~
+_redis_service: redis
+_redis_packages:
+  - redis-server={{ redis_version }}

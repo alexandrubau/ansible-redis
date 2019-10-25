@@ -1,0 +1,10 @@
+---
+- name: Install packages
+  apt:
+    name: "{{ _redis_packages }}"
+
+- name: Start service
+  service:
+    name: "{{ _redis_service }}"
+    state: started
+    enabled: yes
